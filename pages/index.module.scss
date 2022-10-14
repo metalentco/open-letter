@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+
+.title {
+  text-align: center;
+  font-size: 68px;
+  font-weight: 500;
+  line-height: 76px;
+  margin-bottom: 1rem;
+  color: #595959;
+  font-weight: 600;
+  @media (max-width: 375px) {
+    margin-top: -40px;
+    font-size: 48px;
+    line-height: 34px;
+  }
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 3rem;
+  color: #595959;
+  font-style: normal;
+  font-weight: 500;
+  @media (max-width: 375px) {
+    margin-top: -40px;
+    font-size: 35px;
+    font-style: normal;
+    line-height: 44px;
+    margin: 24px 36.5px;
+    font-weight: 400;
+    letter-spacing: -0.85px;
+  }
+}
+
+.paragraphCentered {
+  width: 79.5%;
+  text-align: center;
+  font-size: 23px;
+  font-weight: 400;
+  margin: 1.7rem auto;
+  margin-top: 60px;
+  @media (max-width: 375px) {
+    margin-top: 56px;
+    font-size: 23px;
+    line-height: 25.62px;
+    font-weight: 400;
+    width: 335px;
+    padding: 0px 10px;
+    margin-bottom: 56px;
+  }
+}
+
+.paragraph {
+  width: 70%;
+  margin-left: 15%;
+  @media (max-width: 375px) {
+    margin-left: 20px;
+    // margin-right: 20px;
+    width: 335px;
+  }
+}
+
+.paragraphCentered1 {
+  width: 100%;
+  text-align: center;
+  font-size: 23px;
+  font-weight: 400;
+  position: relative;
+  margin-bottom: 24px;
+  @media (max-width: 375px) {
+    margin-top: 56px;
+    font-size: 23px;
+    line-height: 25.62px;
+    font-weight: 400;
+    padding: 0px 5px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+}
+
+.button {
+  padding: 0.6rem 1.8rem;
+  border-radius: 2rem;
+  font-weight: 500;
+  background-color: #f2f2f2;
+  box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.15),
+    -2px -2px 3px 0 rgba(255, 255, 255, 0.75);
+  @media (max-width: 375px) {
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.signLogoButton {
+  padding: 0.6rem 1.8rem;
+  border-radius: 2rem;
+  font-weight: 500;
+  background-color: #f2f2f2;
+  box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.15),
+    -2px -2px 3px 0 rgba(255, 255, 255, 0.75);
+  margin-bottom: 60px;
+}
+
+.signLogoButton:hover {
+  cursor: pointer;
+}
+
+.signatureHeading {
+  text-align: center;
+  font-size: 17px;
+  margin-top: 40px;
+  font-weight: 500;
+  color: #595959;
+}
+
+.signature {
+  margin: 8px auto;
+  text-align: center;
+  font-family: 'Lausanne', cursive;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  overflow-wrap: break-word;
+  padding: 1rem 13%;
+  border-radius: 12px;
+
+  // box-shadow: 6px 6px 8px 0 rgba(0, 0, 0, 0.15),
+  //   -4px -4px 6px 0 rgba(255, 255, 255, 0.75);
+}
+
+.signatureAddress {
+  text-align: center;
+  font-size: 15px;
+  line-height: 18px;
+  margin: 16px auto;
+  font-weight: 500;
+  color: #595959;
+}
+
+.info {
+  background-image: url('./@assets/images/gradient.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 8px auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 14px;
+  width: 52%;
+  @media (max-width: 375px) {
+    margin-top: 24px;
+    width: 311px;
+  }
+  p {
+    color: #595959;
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: -0.02em;
+    text-align: center;
+  }
+}
+
+.signInfo {
+  background-image: url('./@assets/images/gradient.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: auto;
+  margin: 8px auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 14px;
+  @media (max-width: 1440px) {
+    width: 100%;
+  }
+  @media (min-width: 1440px) {
+    width: 1440px;
+  }
+  @media (max-width: 375px) {
+    width: 375px;
+    height: 374px;
+    font-weight: 515;
+    font-size: 31px;
+  }
+  p {
+    color: #595959;
+    margin-top: 40px;
+    font-size: 38px;
+    font-weight: 515;
+    font-style: italic;
+    line-height: 42.33px;
+    height: 42px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    height: 374px;
+    @media (max-width: 375px) {
+      width: 326px;
+      height: 70px;
+      font-weight: 515;
+      font-size: 31px;
+      margin: 24px 0px;
+    }
+  }
+}
+
+.footer {
+  margin: 4rem auto;
+  color: #595959;
+}
+
+.lotus {
+  max-height: 500px;
+  margin: 3rem auto;
+
+  @media (max-width: 375px) {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 148px;
+  }
+}
+
+.signers {
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #595959;
+  padding: 10px;
+
+  li {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.link {
+  color: #595959;
+}
+
+.letter {
+  background: #e9efef;
+  padding: 35px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.miniHeader {
+  text-align: center;
+  font-weight: 700;
+  font-size: 23px;
+  margin-bottom: 36px;
+  width: 43%;
+  margin-left: 28.5%;
+
+  @media (max-width: 1000px) {
+    width: 70%;
+    margin-left: 15%;
+  }
+
+  @media (max-width: 375px) {
+    width: 335px;
+    margin-left: 0px;
+    font-weight: 700;
+    font-size: 23px;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+}
+
+.pledgePanel {
+  padding: 0.6rem 1.8rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  background-color: #f2f2f2;
+
+  width: 78%;
+  text-align: justify;
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin: 80px auto;
+  box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.15),
+    -2px -2px 3px 0 rgba(255, 255, 255, 0.75);
+  @media (max-width: 375px) {
+    margin: 4px;
+    width: 335px;
+    padding-left: 12px;
+  }
+}
+
+.joinPanel {
+  margin-top: 50px;
+  font-weight: 500;
+  font-size: 15px;
+  text-align: center;
+  @media (max-width: 375px) {
+    font-size: 15px;
+    margin-top: 20px;
+  }
+}
+
+.wellbeingPanel {
+  margin-top: 16px;
+  font-weight: 500;
+  font-size: 26px;
+  height: 31px;
+  text-align: center;
+  @media (max-width: 393px) {
+    margin-bottom: 40px;
+  }
+  @media (max-width: 375px) {
+    font-size: 24px;
+    margin-bottom: 0px;
+    width: 311px;
+    height: 62px;
+    text-align: center;
+  }
+}
+
+.twitterText {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 500;
+  color: #6e6e6e;
+  @media (max-width: 375px) {
+    font-weight: 500;
+    font-size: 17px;
+    height: 48px;
+    width: 307px;
+    margin-top: 24px;
+  }
+}
+
+.twitter {
+  margin-top: 31px;
+  margin-bottom: 38px;
+  display: flex;
+  justify-content: center;
+}
+
+.flexCenter {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  @media (max-width: 840px) {
+    margin-top: 75px;
+  }
+  @media (max-width: 470px) {
+    margin-top: 113px;
+  }
+  @media (max-width: 375px) {
+    margin-top: 40px;
+  }
+}
+
+.circleBox {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  @media (max-width: 840px) {
+    margin-top: 75px;
+  }
+  @media (max-width: 470px) {
+    margin-top: 40px;
+  }
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  @media (max-width: 375px) {
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+
+.process {
+  width: 205px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.line {
+  width: 92px;
+  height: 1.5px;
+  border: 1.5px solid #e4e4e4;
+  background: #e4e4e4;
+  margin-top: -54px;
+  margin-left: 15px;
+}
+.circle {
+  width: 40px;
+  height: 40px;
+  margin-left: 7px;
+  display: flex;
+  padding-top: 7px;
+  justify-content: center;
+  background: #f1f1f1;
+  box-shadow: -3.30897px -3.30897px 9.9269px #ffffff,
+    3.30897px 3.30897px 9.9269px rgba(174, 174, 192, 0.4);
+  border-radius: 110.3px;
+}
+
+.letter {
+  font-family: 'Lausanne';
+  font-size: 11px;
+  font-weight: 500;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 16px;
+  background: #f2f2f2;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.signLogo {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+.mobileWallet {
+  font-size: 18px;
+  text-align: center;
+  @media (max-width: 375px) {
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+
+.walletBlock {
+  width: 80%;
+  display: inline-block;
+}
+
+.connectWallet {
+  margin-top: 30px;
+  padding: 0.6rem 1.8rem;
+  border-radius: 2rem;
+  font-weight: 500;
+  background-color: #f2f2f2;
+  box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.15),
+    -2px -2px 3px 0 rgba(255, 255, 255, 0.75);
+  margin-bottom: 40px;
+  @media (max-width: 375px) {
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
+
+.connectWallet:hover {
+  cursor: pointer;
+}
+
+.shareLetter {
+  margin-top: 50px;
+  font-weight: 500;
+  font-size: 15px;
+  text-align: center;
+  @media (max-width: 375px) {
+    font-size: 15px;
+    margin-top: 24px;
+  }
+}
+
+.signerHeader {
+  color: #595959;
+  font-size: 1.8rem;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: -0.02em;
+  text-align: center;
+  height: 45px !important;
+  @media (max-width: 375px) {
+    margin-bottom: 47px !important;
+  }
+  @media (max-width: 735px) {
+    margin-bottom: 47px !important;
+  }
+}
+
+.footerEmail {
+  margin-top: -23px;
+}
+
+.relative {
+  position: relative;
+}
+
+.smCircle1 {
+  position: absolute;
+  left: -16px;
+  top: 12px;
+}
+
+.smCircle2 {
+  position: absolute;
+  left: -16px;
+  top: 13px;
+}
+
+.smCircle3 {
+  position: absolute;
+  left: -14px;
+  top: 12px;
+}
+
+.threeCircles {
+  width: 60px;
+  display: flex;
+  justify-content: space-between;
+}
