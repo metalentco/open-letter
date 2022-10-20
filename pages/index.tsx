@@ -142,8 +142,14 @@ export const Home = (): JSX.Element => {
   )
 
   const shareTwitter = () => {
-    var text =
-      `Please help us spread the word by sharing your pledges ` + signature
+    var text = `I’m supporting wellbeing in web3 🤍
+
+      Let’s unite to take better care of our individual & collective minds
+      
+      https://openletter.momentsofspace.com
+      
+      Signed: ${signature}
+      `
     url = window.location.href
     var url = `https://twitter.com/intent/tweet?url=${url}&text=${text}`
     window.open(url, 'TwitterWindow', '600')
