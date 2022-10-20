@@ -108,6 +108,7 @@ export const Home = (): JSX.Element => {
   const [state, dispatch] = useReducer(reducer, initialState)
   const { signature, address, walletConnected } = state
   const [twitter, setTwitter] = useState<boolean>(false)
+  const [result, setResult] = useState<String>('Verifying');
 
   const onFetchSigners = useCallback(async () => {
     const response = await fetch(`/api/signers`)
@@ -142,13 +143,16 @@ export const Home = (): JSX.Element => {
   )
 
   const shareTwitter = () => {
-    var text = `I’m supporting wellbeing in web3 🤍 %0aLet’s unite to take better care of our individual and collective minds https://openletter.momentsofspace.com 
+    var text = `I am supporting wellbeing in web3 🤍 %0aLets unite to take better care of our individual and collective minds https://openletter.momentsofspace.com 
     %0aSigned: ${signature}`
     url = window.location.href
     var url = `https://twitter.com/intent/tweet?text=${text}`
     window.open(url, 'TwitterWindow', '600')
 
     setTwitter(true)
+    setTimeout(() => {
+      setResult('Verified')
+    }, 5000)
     return false
   }
 
@@ -408,7 +412,7 @@ export const Home = (): JSX.Element => {
                     <div className={styles.letter}>Sign open letter</div>
                   </div>
                   <div className={styles.box}>
-                    {twitter ? (
+                    {twitter && result == 'Verified' ? (
                       <div className={styles.circle}>✓</div>
                     ) : (
                       <div className={styles.circle}></div>
@@ -449,8 +453,8 @@ export const Home = (): JSX.Element => {
                     eye out for something special landing on Dec 16th
                   </p>
                   <div className={styles.twitter}>
-                    <p className={styles.button} onClick={shareTwitter}>
-                      Verified
+                    <p className={styles.button}>
+                      {result}
                     </p>
                   </div>
                 </div>
@@ -485,7 +489,7 @@ export const Home = (): JSX.Element => {
                     <div className={styles.letter}>Sign open letter</div>
                   </div>
                   <div className={styles.box}>
-                    {twitter ? (
+                    {twitter && result == 'Verified' ? (
                       <div className={styles.circle}>✓</div>
                     ) : (
                       <div className={styles.circle}></div>
@@ -526,8 +530,8 @@ export const Home = (): JSX.Element => {
                     special landing on Dec 16th
                   </p>
                   <div className={styles.twitter}>
-                    <p className={styles.button} onClick={shareTwitter}>
-                      Verified
+                    <p className={styles.button}>
+                      {result}
                     </p>
                   </div>
                 </div>
