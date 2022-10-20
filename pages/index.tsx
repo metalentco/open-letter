@@ -142,16 +142,10 @@ export const Home = (): JSX.Element => {
   )
 
   const shareTwitter = () => {
-    var text = `I’m supporting wellbeing in web3 🤍
-
-      Let’s unite to take better care of our individual & collective minds
-      
-      https://openletter.momentsofspace.com
-      
-      Signed: ${signature}
-      `
+    var text = `I’m supporting wellbeing in web3 🤍 Let’s unite to take better care of our individual and collective minds https://openletter.momentsofspace.com 
+    %0aSigned: ${signature}`
     url = window.location.href
-    var url = `https://twitter.com/intent/tweet?url=${url}&text=${text}`
+    var url = `https://twitter.com/intent/tweet?&text=${text}`
     window.open(url, 'TwitterWindow', '600')
 
     setTwitter(true)
