@@ -142,7 +142,14 @@ export const Home = (): JSX.Element => {
   )
 
   const shareTwitter = () => {
+    var text =
+      `Please help us spread the word by sharing your pledges ` + signature
+    url = window.location.href
+    var url = `https://twitter.com/intent/tweet?url=${url}&text=${text}`
+    window.open(url, 'TwitterWindow', '600')
+
     setTwitter(true)
+    return false
   }
 
   useEffect(() => {
