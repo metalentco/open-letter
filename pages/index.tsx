@@ -108,7 +108,7 @@ export const Home = (): JSX.Element => {
   const [state, dispatch] = useReducer(reducer, initialState)
   const { signature, address, walletConnected } = state
   const [twitter, setTwitter] = useState<boolean>(false)
-  const [result, setResult] = useState<String>('Verifying');
+  const [result, setResult] = useState<any>('Verifying');
 
   const onFetchSigners = useCallback(async () => {
     const response = await fetch(`/api/signers`)
@@ -152,7 +152,7 @@ export const Home = (): JSX.Element => {
     setTwitter(true)
     setTimeout(() => {
       setResult('Verified')
-    }, 5000)
+    }, 7000)
     return false
   }
 
